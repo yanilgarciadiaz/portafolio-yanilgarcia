@@ -15,7 +15,7 @@ body {
 /* inicio */
 .contenedorBackground {
     width: 100%;
-    min-height: 125vh;
+    height: 125vh;
     margin-top: 10px;
     background-image: linear-gradient(80deg, #c7408a9d, #f06292);
     overflow: hidden;
@@ -133,7 +133,6 @@ body {
 .info {
     width: 780px;
     height: 415px;
-    /* min-height: 415px; */
     max-height: 615px;
     text-align: left;
     align-content: center;
@@ -157,10 +156,8 @@ body {
 .info svg {
     max-height: 290px;
     min-width: 780px;
-    /* min-height: 300px; */
     text-wrap: wrap;
     margin: 10px 0 6px 0;
-    /* background-color: #2f54bbfa; */
 }
 
 .texto-delineado {
@@ -350,13 +347,11 @@ body {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-
 }
 
 .herramientas i {
     font-size: 80px;
     padding-right: 40px;
-    /* color: #13274f; */
     animation: aparecer linear;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
@@ -365,7 +360,6 @@ body {
 .herramientas i:hover {
     font-size: 90px;
     transition: 0.3s;
-    /* color: #6cb4ee; */
 }
 
 .herramientas .fa-java {
@@ -489,7 +483,6 @@ body {
     padding: 5px;
     justify-content: center;
     /* grid-template-columns: repeat(2, 1fr);  */
-    /* background-color: #3538c9e3; */
 }
 
 .contenedor-proyectos .caja {
@@ -522,17 +515,6 @@ body {
     overflow: hidden;
 }
 
-/* .contenedor-proyectos .herramientas{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 200px;
-    height: 10px;
-    background-color: #f06292;
-}
-.contenedor-proyectos .herramientas img{
-    height: 15px;
-} */
 .contenedor-proyectos .contenedorDescripcion {
     color: #626769;
     width: 200px;
@@ -610,6 +592,7 @@ footer h2::selection,
 footer h3::selection {
     color: #13274f;
 }
+
 footer .contacto li {
     min-width: 150px;
     font-size: 16px;
@@ -670,14 +653,16 @@ footer span::selection {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .contenedorBackground{
+    .contenedorBackground {
         height: 180vh;
     }
-    .inicio-presentacion{
+
+    .inicio-presentacion {
         height: auto;
         display: flex;
         flex-wrap: wrap;
     }
+
     .info {
         width: 4000px;
         height: 900px;
@@ -687,23 +672,29 @@ footer span::selection {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .contenedorBackground{
+    .contenedorBackground {
         height: 180vh;
     }
-    .inicio-presentacion{
+
+    .inicio-presentacion {
         height: auto;
     }
+
     .info {
         height: 900px;
         align-content: center;
         margin-left: 30px;
     }
-    .herramientas{
+
+    .herramientas {
         justify-content: center;
     }
-    .herramientas i{
+
+    .herramientas i {
         font-size: 70px;
+        padding: 0 12px;
     }
+
     .herramientas i:hover {
         font-size: 80px;
         transition: 0.3s;
@@ -716,26 +707,31 @@ footer span::selection {
         padding-top: 50px;
         margin-left: 30px;
     }
-    .mifoto{
+
+    .mifoto {
         width: 315px;
         height: 315px;
     }
-    .borde-effect{
+
+    .borde-effect {
         width: 260px;
         height: 260px;
     }
-    .mifoto img{
+
+    .mifoto img {
         width: 250px;
         height: 250px;
     }
+
     .info h1 {
         font-size: 55px;
     }
 
-    .info svg{
+    .info svg {
         margin-top: 0;
         height: 100px;
     }
+
     .info .texto-delineado {
         font-size: 45px;
         transform: translateX(-18%);
@@ -766,6 +762,7 @@ footer span::selection {
     .herramientas i {
         margin-top: 10px;
         font-size: 55px;
+        padding: 0 12px;
     }
 
     .herramientas i:hover {
@@ -784,7 +781,7 @@ footer span::selection {
 
     .contenedor-proyectos {
         align-content: center;
-        
+
     }
 
     .contenedoresA {
@@ -825,149 +822,174 @@ footer span::selection {
     .contenedor-proyectos .contenedorDescripcion i {
         font-size: 15px;
     }
-    
-    footer{
+
+    footer {
         padding: 20px 80px;
     }
 
-    footer h2{
+    footer h2 {
         font-size: 14.5px;
     }
-    footer h3{
+
+    footer h3 {
         font-size: 13px;
     }
-    footer .contacto li{
+
+    footer .contacto li {
         font-size: 13px;
     }
-    footer .contacto i{
+
+    footer .contacto i {
         font-size: 13px;
     }
+
     footer h4 {
         font-size: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .contenedorBackground{
-        width: 100%;
+    html,
+    body {
+        overflow-x: hidden;
     }
+
+    body {
+        position: relative;
+        min-width: 410px;
+    }
+
+    .contenedorBackground {
+        width: 100%;
+        height: 700px;
+    }
+
+    .inicio-presentacion {
+        height: auto;
+    }
+
     .info {
-        height: auto; /* Ajuste dinámico */
-        padding-top: 20px;
+        height: 350px;
+        padding-top: 80px;
         margin-left: 10px;
     }
+
     .mifoto {
+        width: auto;
+        height: 240px;
+        display: flex;
+    }
+
+    .borde-effect {
         width: 200px;
         height: 200px;
-        margin: 0 auto; /* Centrado */
     }
-    .borde-effect {
-        width: 180px;
-        height: 180px;
-    }
+
     .mifoto img {
-        width: 170px;
-        height: 170px;
+        width: 190px;
+        height: 190px;
     }
+
     .info h1 {
-        font-size: 30px; /* Reducido para pantallas pequeñas */
-        text-align: center; /* Centrado */
+        font-size: 35px;
+        text-align: left;
     }
+
     .info svg {
-        margin-top: 10px;
-        height: 60px;
+        height: 80px;
     }
+
     .info .texto-delineado {
-        font-size: 25px; /* Reducido */
-        transform: translateX(0); /* Centrado */
+        font-size: 35px;
+        transform: translateX(-23%);
     }
+
     .info h3 {
-        font-size: 16px; /* Ligero ajuste */
-        text-align: center;
+        font-size: 16px;
     }
+
     .h3c {
-        width: 90%; /* Se expande a toda la pantalla */
+        width: 78%;
     }
+
     .frase {
         width: 100%;
         margin-top: 20px;
-        text-align: center; /* Centrado */
+        text-align: center;
     }
+
     .frase p {
         font-size: 16px;
     }
+
     .herramientas {
         margin: 5%;
         height: auto;
         display: flex;
-        justify-content: center; /* Centrar los iconos */
-        flex-wrap: wrap; /* Permitir múltiples filas */
+        justify-content: center;
+        flex-wrap: wrap;
     }
+
     .herramientas i {
         margin: 10px 5px;
-        font-size: 40px; /* Reducido */
+        font-size: 40px;
+        padding: 0 12px;
     }
+
     .herramientas i:hover {
-        font-size: 45px; /* Animación también reducida */
+        font-size: 45px;
         transition: 0.3s;
     }
+
     .contenedor-proyectos {
         align-content: center;
     }
+
     .contenedor-proyectos h3 {
-        font-size: 14px; /* Reducido */
+
+        font-size: 14px;
     }
+
     .contenedor-proyectos h2 {
         font-size: 30px;
         margin-top: 10px;
     }
+
     .contenedoresA {
-        margin-left: 0;
+        margin-left: 10px;
         width: 100%;
     }
+
     .contenedor-proyectos .caja {
-        width: 100%; /* Ajuste dinámico */
-        height: auto; /* Altura ajustable */
+        width: 100%;
+        height: 340px;
         margin-bottom: 20px;
     }
+
     .contenedor-proyectos .caja .contenedorImagenes {
-        width: 100%; /* Expandido */
-        height: auto; /* Ajustable */
-    }
-    .contenedor-proyectos .caja .contenedorImagenes video {
-        width: 100%; /* Expandido */
+        width: 97%;
         height: auto;
     }
-    .contenedor-proyectos .caja .contenedorDescripcion {
+
+    .contenedor-proyectos .caja .contenedorImagenes video {
         width: 100%;
         height: auto;
     }
+
+    .contenedor-proyectos .caja .contenedorDescripcion {
+        width: 90%;
+        height: auto;
+    }
+
     .contenedor-proyectos .contenedorDescripcion h3 {
         font-size: 14px;
     }
+
     .contenedor-proyectos .contenedorDescripcion p {
         font-size: 12px;
     }
+
     .contenedor-proyectos .contenedorDescripcion i {
         font-size: 14px;
-    }
-    footer {
-        padding: 10px 20px; /* Reducido */
-        text-align: center;
-    }
-    footer h2 {
-        font-size: 12px;
-    }
-    footer h3 {
-        font-size: 12px;
-    }
-    footer .contacto li {
-        font-size: 12px;
-    }
-    footer .contacto i {
-        font-size: 12px;
-    }
-    footer h4 {
-        font-size: 10px;
     }
 }
