@@ -1,0 +1,38 @@
+{
+    "profile": {
+        "greeting": "Hello, I'm",
+        "name": "Yanil García",
+        "role": "Junior Software Developer & Database Management",
+        "address": "Santiago, DR.",
+        "time": "3+ years of academy knowledge",
+        "specialice": "Specialice at data base administration",
+        "about": "I'm adaptable and proactive, with a strong dedication to my work and a sturdy passion for learning. My goal is to earn the necessary skills to contribute to innovative projects and be committed to apply my knowledge on the continuous improvement of data-driven solutions.",
+        "download": "Download CV",
+        "contact": "Contact Me"
+    },
+    "portfolio":{
+        "sub-title": "PORTFOLIO SHOWCASE",
+        "title": "Projects",
+        "description": "Explore my latest projects",
+        "p1-agriculturelossprevention": "Agricultural Loss Prevention",
+        "p1-description": "A module designed to generate preventive alerts to reduce agricultural losses within a farm's variou sowing.",
+        "p2-photographsBooking": "Photo Session Booking Management",
+        "p2-description": "A web system for managing sessions reservations, a main website and checking availability.",
+        "p3-gymSyst": "Gym Management System",
+        "p3-description": "Software for managing a gym's POS and membership administration.",
+        "p4-clinicalDB": "Clinical Record Database",
+        "p4-description": "A database structure modeled for the storage and management of patient clinical records.",
+        "p5-accountingSyst": "Accounting system Prototype",
+        "p5-description": "A prototype that maintains control of accounting accounts, transactional records, and financial closings.",
+        "p6-agriculturalSoft": "Agricultural Software",
+        "p6-description": "Manages agricultural activities along with the control of farms and agricultural tasks."
+    },
+    "certifications":{
+        "title": "Certifications",
+        "verify": "Verify certificate"
+    },
+    "footer":{
+        "interestedAt": "Focused on professional growth into the software development field",
+        "madeBy": "Made by "
+    }
+}

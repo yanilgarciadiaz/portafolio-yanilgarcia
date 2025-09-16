@@ -1,0 +1,38 @@
+{
+    "profile": {
+        "greeting": "Hola, Soy",
+        "name": "Yanil García",
+        "role": "Desarrolladora de Software junior & Administradora de Bases de Datos",
+        "address": "Santiago, RD.",
+        "time": "3+ años de experiencia académica",
+        "specialice": "Especializada en administración de bases de datos",
+        "about": "Me adapto al cambio, soy proactiva, dedicada a mi trabajo y abierta al aprendizaje. Estoy enfocada en un crecimiento profesional que me ayude a contribuir con el desarrollo de las bases de datos y al uso continuo y adecuado de la información utilizada en los entornos de trabajo.",
+        "download": "Descargar CV",
+        "contact": "Contáctame"
+    },
+    "portfolio":{
+        "sub-title": "MUESTRA DE PORTAFOLIO",
+        "title": "Proyectos",
+        "description": "Explora mis más recientes proyectos",
+        "p1-agriculturelossprevention": "Prevención de Pérdidas Agricolas",
+        "p1-description": "Módulo encargado de generar alertas preventivas para mitigar pérdidas agricolas en una finca según sus distintas siembras.",
+        "p2-photographsBooking": "Gestión de Reservas Fotograficas",
+        "p2-description": "Gestor de reservas para sesiones, site principal y identificador de disponibilidades.",
+        "p3-gymSyst": "Administrador de Gimnacio",
+        "p3-description": "Software apropiado para el manejo de punto de venta de un gimancio y gestión de membresias.",
+        "p4-clinicalDB": "Base de Datos Record Clínico",
+        "p4-description": "Estructura modelada para el almacenamiento y la gestión de información relacionada al record clínico de los pacientes.",
+        "p5-accountingSyst": "Prototipo Sistema Contable",
+        "p5-description": "Prototipo que mantiene el control de cuentas contables, registros, movimientos transaccionales y cierres contables.",
+        "p6-agriculturalSoft": "Software Agrícola",
+        "p6-description": "Administra las actividades agricolas en conjunto con el control de fincas y faenas."
+    },
+    "certifications":{
+        "title": "Certificaciones",
+        "verify": "Validar certificado"
+    },
+    "footer":{
+        "interestedAt": "Enfocada en crecer profesionalmente en el área del desarrollo de software",
+        "madeBy": "Hecho por "
+    }
+}

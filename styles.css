@@ -87,11 +87,14 @@ img {
 .t2{
     font-weight: 400;
     width: 600px;
+    margin-top: 20px;
 }
 
 .t3 p{
     text-wrap: wrap;
     font-size: 1rem;
+    margin: 30px 0;
+    text-align: justify;
 }
 
 .info .btns{
@@ -110,6 +113,7 @@ img {
     text-decoration: none;
     color: var(--gray);
 }
+
 /* .info .t1 h1{
     display: block;
 }
@@ -183,6 +187,8 @@ h3{
 .description-container h3{
     /* height: 100px; */
     text-wrap: wrap;
+    font-size: 1rem !important;
+    margin: 25px 0;
 }
 
 .desc-tools-container{
@@ -394,7 +400,7 @@ video{
     border-radius: 1rem;
 }
 
-.c-card .description-container{
+.c-card .description-containerC{
     height: 50%;
     width: auto;
     justify-items: center;
@@ -402,7 +408,7 @@ video{
     margin-top: 10px;
 }
 
-.c-card .description-container a{
+.c-card .description-containerC a{
     text-decoration: none;
     color: var(--blue);
     display: block;
@@ -410,7 +416,7 @@ video{
     font-size: 0.9rem;
 }
 
-.description-container h4, .description-container a{
+.description-containerC h4, .description-containerC a{
     font-weight: 400;
 }
 
@@ -527,4 +533,19 @@ footer span::selection {
 .contacto a {
     color: #797d7f;
     text-decoration: none;
+}
+
+/* language */
+.language{
+    background-color: var(--gray);
+}
+
+.language button{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.language i{
+    font-size: 1.5rem;
+    color: #fff;
 }
