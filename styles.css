@@ -22,8 +22,9 @@
 /* start */
 .start-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 615px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    min-height: 615px;
     background-color: var(--gray);
     color: #ffff;
 }
@@ -36,12 +37,11 @@
     justify-content: center;
 }
 
-/* .photo{
-    background-color: #6cb4ee;
-} */
-
 .info {
     text-wrap: wrap;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .photo-container {
@@ -64,12 +64,6 @@
     height: 95%;
     object-fit: cover;
     border-radius: 1rem;
-}
-
-.info {
-    width: 600px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .t1 h1 {
@@ -122,13 +116,35 @@
     color: var(--gray);
 }
 
-/* .info .t1 h1{
-    display: block;
+.t1 .circule {
+    width: 9rem;
+    height: 9rem;
+    background-color: #845282;
+    border-radius: 50%;
+    position: absolute; 
+    top: 8rem;
+    right: 20rem;
+    z-index: 0;
+    opacity: 0.3;
+    transition: 0.3s ease;
 }
 
-.info .t1 h2{
-    display: block;
-} */
+.t1 .circule2 {
+    width: 7rem;
+    height: 7rem;
+    background-color: #2a90b8;
+    border-radius: 50%;
+    position: absolute; 
+    top: 5rem;
+    right: 25rem;
+    z-index: 0;
+    opacity: 0.3;
+    transition: 0.3s ease;
+}
+
+.circule:hover, .circule2:hover{
+    transform: scale(1.06);
+}
 
 .glass-effect {
     background-color: var(--glass);
@@ -161,32 +177,50 @@ h3 {
 }
 
 .portfolio-container .title {
-    height: 250px;
+    min-height: 250px;
     padding-top: 1%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .title-text {
     padding-left: 10%;
+    position: relative;
 }
 
 .portfolio-container .circule {
-    width: 6rem;
-    height: 6rem;
-    background-color: #525f84;
+    width: 9rem;
+    height: 9rem;
+    background-color: #845282;
     border-radius: 50%;
-    /* position: absolute; */
-    z-index: -2;
-    top: 0px;
-    right: 0px;
-    /* display: inline; */
+    position: absolute; 
+    top: 2rem;
+    left: 5rem;
+    z-index: 0;
+    opacity: 0.3;
+    transition: 0.3s ease;
+}
+
+.portfolio-container .circule2 {
+    width: 7rem;
+    height: 7rem;
+    background-color: #2a90b8;
+    border-radius: 50%;
+    position: absolute; 
+    top: 1rem;
+    left: 12rem;
+    z-index: 0;
+    opacity: 0.3;
+    transition: 0.3s ease;
 }
 
 .portfolio-container h1,
 .portfolio-container h2,
 .portfolio-container h3 {
     color: #ffff;
+    position: relative;
+    z-index: 1;
 }
 
 .portfolio-container h1 {
@@ -294,7 +328,7 @@ video {
 /* tech */
 .technologies-divider {
     padding-left: 10%;
-    width: 550px;
+    max-width: 550px;
     /* height: 100px; */
     display: flex;
     flex-wrap: wrap;
@@ -663,4 +697,38 @@ footer .ftspanname::selection {
 
 .name, .greeting{
     animation: show 4s ease;
+}
+
+/* animacion circulo */
+@keyframes showC {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.3;
+    }
+}
+
+.t1 .circule, .t1 .circule2{
+    animation: showC 4s ease;
+}
+
+@keyframes appearC {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 0.3;
+        scale: 1;
+    }
+}
+
+.portfolio-container .circule, .portfolio-container .circule2{
+    animation: appearC 4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
