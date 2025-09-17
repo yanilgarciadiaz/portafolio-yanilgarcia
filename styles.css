@@ -51,9 +51,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 2s ease;
 }
 
-img {
+.photo-container:hover{
+    transform: scale(1.1);
+}
+
+.photo-container img {
     width: 95%;
     height: 95%;
     object-fit: cover;
@@ -229,7 +234,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.7rem;
+    gap: 3rem;
 }
 
 .box{
@@ -241,6 +246,12 @@ h3{
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 0.7rem;
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    transform: scale(1.06);
+    box-shadow: 2px 1px 5px 0px #ffffff6b;
 }
 
 .box .video-container{
@@ -333,7 +344,7 @@ video{
 /* certifications */
 .certificates-container{
     padding-top: 40px;
-    height: 840px;
+    min-height: 840px;
     background-color: var(--purple);
     justify-items:  center;
     color: #fff;
@@ -342,6 +353,8 @@ video{
 .certificates-container h1{
     color: #fff;
     font-size: 1rem;
+    justify-self: left;
+    margin-left: 5%;
 }
 
 .c-card h4{
@@ -349,36 +362,97 @@ video{
 }
 
 .cert{
-    margin-top: 40px;
-    width: 90vw;
-    height: 700px;
+    margin-top: 10px;
+    width: 80vw;
+    min-height: 600px;
     justify-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8%;
 }
 
+.cert .c-cardNew{
+    height: 8rem;
+    width: 90vw;
+    padding: 1.4rem 4%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 2px solid var(--glass);
+}
+
+.cert .c-cardNew .sec1{
+    display: flex;
+    height: 5.5rem;
+}
+
+.cert .c-cardNew .c-cardicon i{
+    font-size: 2rem;
+}
+
+.cert .c-cardNew .c-cardicon{
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert .c-cardNew .c-carddescription{
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    align-content: center;
+    padding-left: 15px;
+}
+
+.cert .c-cardNew .c-carddescription h3{
+    font-size: 1.2rem !important;
+}
+
+.cert .c-cardNew .c-carddescription h4{
+    font-size: 0.8rem !important;
+    font-weight: 400;
+}
+
+.cert .c-cardNew .sec2{
+    display: flex;
+    height: 5.5rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.c-cardNew .img-container{
+    /* width: auto; */
+    height: 50%;
+    margin-right: 20px;
+}
+
+.c-cardNew img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.cert .c-cardNew .c-cardverify i{
+    color: var(--pink);
+    font-size: 1.2rem;
+}
+
+/* viwejo de card */
 .cert .c-card{
     width: 20rem;
     height: 20rem;
     border: 2px solid var(--glass);
     border-radius: 0.7rem;
     padding: 5%;
+    background-color: rgba(226, 255, 206, 0.555);
+    color: var(--purple)  !important;
     /* display: grid; */
     /* grid-template-rows: 0.5fr 1fr; */
     /* gap: 1rem; */
 }
 
-.c-card .img-container{
-    /* width: auto; */
-    padding-bottom: 0.6rem;
-    height: 50%;
-    border-radius: 2%;
-    align-content: starts;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
 
 .c-card .fa-medal{
     position: absolute;
@@ -393,12 +467,6 @@ video{
     color: var(--yellow);
 }
 
-.c-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
 
 .c-card .description-containerC{
     height: 50%;
@@ -410,10 +478,14 @@ video{
 
 .c-card .description-containerC a{
     text-decoration: none;
-    color: var(--blue);
+    color: var(--pink);
     display: block;
     margin-top: 20px;
     font-size: 0.9rem;
+}
+
+.c-card .description-containerC a:hover{
+    font-weight: 600;
 }
 
 .description-containerC h4, .description-containerC a{
