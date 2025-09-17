@@ -23,17 +23,23 @@ modal.addEventListener("click", (e) => {
 
 // --- CAMBIO DE IDIOMA
 const btn = document.getElementById("lang");
+const textsToChange = document.querySelectorAll("[data-section]");
 
 const changelanguage = async language =>{
     const requestJson = await fetch(`content/${language}.json`);
     const texts = await requestJson.json();
 
-    console.log(texts);
+    for(const txtch of textsToChange){
+        const section = txtch.dataset.section;
+        const value = txtch.dataset.value;
+
+        txtch.innerHTML = texts[section][value];
+    }
+
 }
 
 btn.addEventListener("click", (e) => {
-    const lang = e.target.dataset.language === "en" ? "es" : "en";
+    const lang = e.target.dataset.language === "es" ? "en" : "es";
     e.target.dataset.language = lang;
     changelanguage(lang);
-    // changelanguage(e.target.parentElement.dataset.language);
 })

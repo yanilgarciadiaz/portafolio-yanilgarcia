@@ -517,7 +517,7 @@ footer h4 {
     text-align: center;
 }
 
-footer span {
+footer .ftspanname {
     color: #f06292;
 }
 
@@ -525,7 +525,7 @@ footer h4::selection {
     color: #13274f;
 }
 
-footer span::selection {
+footer .ftspanname::selection {
     background-color: #f06292;
     color: #fff;
 }
